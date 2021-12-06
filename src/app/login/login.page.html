@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot = "end">
+      <ion-button [routerLink] = "['/signin']">Registrarse</ion-button>
+    </ion-buttons>
+    <ion-title size = "large">Iniciar Sesión</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen] = "true">
+  <ion-header collapse = "condense">
+    <ion-title size = "large">Iniciar Sesión</ion-title>
+  </ion-header>
+  <p align = "center">
+    <img src = "../assets/icon/agenda/agenda icono.png">
+  </p>
+  <ion-item>
+    <ion-input placeholder="Correo" clearInput = "true" [(ngModel)] = "correo"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input clearInput = "true" type = "password" placeholder="Contraseña" [(ngModel)] = "user_key"></ion-input>
+  </ion-item>
+  <ion-button expand = "block" (click) = "onEntrar()"> Entrar </ion-button>
+</ion-content>
+
+

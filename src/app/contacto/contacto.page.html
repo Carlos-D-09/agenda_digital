@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot= "start">
+      <ion-button [routerLink] = "['/home',idUsuario]">
+        <ion-icon name="arrow-undo-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot= "end">
+      <ion-button [routerLink] = "['']">
+        <ion-icon name="trash-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title size = "large" class = "ion-text-center">{{nombre}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen] = "true">
+  <ion-header collapse = "condese">
+  </ion-header>
+  <ion-card >
+    <p align = "center">
+      <img [src] = "imagen" align = "center">
+    </p>
+    <ion-list>
+      <ion-item>
+        <ion-icon name="mail-outline"></ion-icon>
+        {{correo_electronico}}
+      </ion-item>
+      <ion-item>
+        <ion-icon name="logo-whatsapp"></ion-icon>
+        {{telefono}}
+      </ion-item>
+      <ion-item>
+        <ion-icon name="logo-facebook"></ion-icon>
+        {{facebook}}
+      </ion-item>
+      <ion-item>
+        <ion-icon name="logo-twitter"></ion-icon>
+        {{twitter}}
+      </ion-item>
+      <ion-item>
+        <ion-icon name="logo-instagram"></ion-icon>
+        {{instagram}}
+      </ion-item>
+    </ion-list>
+  </ion-card>
+</ion-content>

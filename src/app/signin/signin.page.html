@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title size = "large">Registrate</ion-title>
+    <ion-buttons slot= "start">
+      <ion-button [routerLink] = "['']">
+        <ion-icon name="arrow-undo-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen] = "true">
+  <ion-header collapse = "condense">
+    <ion-title size = "large" class = "ion-text-center">Registrate</ion-title>
+  </ion-header>
+  <p align = "center">
+    <img src = "../assets/icon/agenda/registro.png">
+  </p>
+  <ion-item>
+    <ion-input placeholder="Nombre(s)" clearInput = "true" [(ngModel)] = "nombres"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input placeholder="Apellido(s)" clearInput = "true" [(ngModel)] = "apellidos"></ion-input>
+  </ion-item>
+  <ion-item> 
+    <ion-input placeholder="Correo" clearInput = "true" [(ngModel)] = "correo_electronico" ></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input placeholder="Celular" clearInput = "true" [(ngModel)] = "celular"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input type = "password" placeholder="Contraseña" [(ngModel)] = "user_key"></ion-input>
+  </ion-item>
+  
+  <ion-button expand = "block" (click) = "onRegistrar()" > Registrarse </ion-button>
+</ion-content>

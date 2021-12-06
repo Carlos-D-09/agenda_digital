@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot= "start">
+      <ion-button [routerLink] = "['/home',idUsuario]">
+        <ion-icon name="arrow-undo-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title size = "large">Agregar contacto</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen] = "true">
+  <ion-header collapse = "condense">
+  </ion-header>
+  <ion-list>
+    <ion-item>
+      <ion-input placeholder="Nombre" clearInput = "true" [(ngModel)] = "nombre"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input placeholder="Url imagen" clearInput = "true" [(ngModel)] = "imagen"></ion-input>
+    </ion-item>
+    <ion-item> 
+      <ion-input placeholder="Correo" clearInput = "true" [(ngModel)] = "correo_electronico" ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input placeholder="Celular" clearInput = "true" [(ngModel)] = "celular"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input placeholder = "Facebook" clearInput = "true" [(ngModel)] = "facebook"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input placeholder="Twitter" clearInput = "true" [(ngModel)] = "twitter"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input placeholder="Instagram" clearInput = "true" [(ngModel)] = "instagram"></ion-input>
+    </ion-item>    
+  </ion-list>
+
+  <ion-button expand = "block" (click) = "onInsertar()" > Agregar </ion-button>
+</ion-content>
